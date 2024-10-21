@@ -6,3 +6,8 @@ data_ingestion:
   source_URL: https://raw.githubusercontent.com/dushyantverma22/data_set/main/WineQT.csv
   local_data_file: artifacts/data_ingestion/WineQT.csv
   unzip_dir: artifacts/data_ingestion
+
+data_validation:
+  root_dir: [artifacts/data_validation]
+  unzip_data_dir: artifacts/data_ingestion/WineQT.csv
+  STATUS_FILE: artifacts/data_validation/status.txt

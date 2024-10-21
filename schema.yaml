@@ -1,1 +1,17 @@
-key1: value1
+COLUMNS:
+  fixed acidity: float
+  volatile acidity: float
+  citric acid: float
+  residual sugar: float
+  chlorides: float
+  free sulfur dioxide: float
+  total sulfur dioxide: float
+  density: float
+  pH: float
+  sulphates: float
+  alcohol: float
+
+TARGET_COLUMN:
+  name: quality
+
+
