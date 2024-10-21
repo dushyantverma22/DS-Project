@@ -8,6 +8,7 @@ from box import ConfigBox
 from pathlib import Path
 from typing import Any
 from box.exceptions import BoxValueError
+from typing import Union
 
 @ensure_annotations
 def read_yaml(path_to_yaml: Path) -> ConfigBox:
@@ -24,7 +25,12 @@ def read_yaml(path_to_yaml: Path) -> ConfigBox:
         raise e
     
 @ensure_annotations
-def create_directories(path_of_directories: list,verbose=True):
+def create_directories(path_of_directories: Union[str, list], verbose=True):
+    # If it's a string, convert it into a list with one element
+    if isinstance(path_of_directories, str):
+        path_of_directories = [path_of_directories]
+    
+    # Create directories
     for path in path_of_directories:
         os.makedirs(path, exist_ok=True)
         if verbose:
