@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Data_analytics_new/FSDS/learning/DS_Project/DS-Project/mlruns/0/37e69c83b51d4f41ad0c3759a23e0e80/artifacts
+end_time: 1729584703433
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 37e69c83b51d4f41ad0c3759a23e0e80
+run_name: marvelous-yak-71
+run_uuid: 37e69c83b51d4f41ad0c3759a23e0e80
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1729584703315
+status: 4
+tags: []
+user_id: Oliver
